@@ -288,9 +288,10 @@ body {
           width: 330px;
           margin-left: 100px;
           margin-top: -10px; }
-        .container .gridLayout .box11 .scene .bouteilletest {
-          width: 300px; }
+      .container .gridLayout .box11 #labMediaQuerie {
+        display: none; }
       .container .gridLayout .box11 .title h3 {
+        display: inline-block;
         text-align: right;
         margin-bottom: 10px; }
         .container .gridLayout .box11 .title h3 .highlight {
@@ -328,6 +329,42 @@ body {
   .labPageContainer svg {
     width: 60%;
     height: auto; }
+
+@media (max-width: 550px) {
+  .container {
+    margin: 10px; }
+    .container .gridLayout .box4 {
+      grid-column-start: 1;
+      grid-column-end: 7; }
+    .container .gridLayout .box6 {
+      grid-column-start: 2;
+      grid-column-end: 6; }
+    .container .gridLayout .box7 {
+      grid-row-start: 4;
+      grid-column-start: 1;
+      grid-column-end: 5; }
+    .container .gridLayout .labTitle {
+      grid-row-start: 8; }
+    .container .gridLayout .box11 {
+      grid-row-start: 9;
+      grid-row-end: 12;
+      justify-content: flex-start;
+      align-items: center; }
+  .scene {
+    display: none; }
+  #labMediaQuerie {
+    display: block !important;
+    max-width: 70%;
+    max-height: auto; } }
+
+@media (max-width: 400px) {
+  .box11 {
+    grid-row-start: 9 !important;
+    grid-row-end: 10 !important;
+    justify-content: center !important;
+    align-items: center; }
+  #labMediaQuerie {
+    display: none !important; } }
 
 
 /*# sourceMappingURL=/style.e0c02e61.css.map */
