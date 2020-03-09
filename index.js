@@ -1,5 +1,5 @@
 import Parallax from 'parallax-js';
-// import './style/style.scss';
+import './style/style.scss';
 
 var scene = document.querySelector(".scene");
 var parallaxInstance = new Parallax(scene);
