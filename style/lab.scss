@@ -1,0 +1,156 @@
+$primary-font: "Ubuntu",
+sans-serif;
+$gridRowSize: 120px;
+$boxShadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+$boxColor: rgb(245, 245, 245);
+
+
+body {
+    font-family: $primary-font;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    padding: 20px 10px;
+    display: block;
+    font-size: 2.6em;
+    font-weight: 500;
+    color: rgb(31, 31, 31);
+    text-align: center;
+}
+
+.labPageContainer {
+    width: 100vw;
+    height: max-content;
+}
+
+.projectGrid {
+    display: grid;
+    width: calc(100% - 40px);
+    height: max-content;
+    margin: 10px 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize;
+    row-gap: 20px;
+    column-gap: 20px;
+
+    .projectBox {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        border-radius: 10px;
+        box-shadow: $boxShadow;
+        background-color: $boxColor;
+
+        .projectImg {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                margin: 20px;
+                width: 70%;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+
+        .projectDescription {
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+
+            h2 {
+                text-align: center;
+            }
+
+            a {
+                text-align: center;
+                display: block;
+                padding: 20px;
+                color: rgb(31, 31, 31);
+            }
+        }
+
+        .projectTools {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            padding: 20px;
+
+            h4 {
+                margin: 0;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .toolsList {
+                width: 100%;
+                margin-top: 30px;
+
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+
+            }
+        }
+    }
+
+    .box1 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 5;
+
+    }
+
+    .box2 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 6;
+        grid-row-end: 10;
+
+    }
+
+    .box3 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 11;
+        grid-row-end: 15;
+
+    }
+}
+
+@media (max-width: 850px) {
+    .projectBox {
+        height: max-content;
+    }
+
+    .projectImg {
+        display: none !important;
+    }
+
+    .projectDescription {
+        grid-column-start: 1 !important;
+        grid-column-end: 5 !important;
+
+    }
+
+    .projectTools {
+        grid-column-start: 1 !important;
+        grid-column-end: 5 !important;
+    }
+}
