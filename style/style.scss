@@ -1,5 +1,6 @@
 //Global variables
-$primary-font: "Ubuntu", sans-serif;
+$primary-font: "Ubuntu",
+sans-serif;
 
 //Grid Relative variables
 $gridRowSize: 120px;
@@ -75,6 +76,7 @@ body {
         margin: $emojiMargin;
       }
     }
+
     .gridBoxDark {
       background-color: rgb(55, 52, 73);
       color: white;
@@ -103,6 +105,7 @@ body {
         margin-left: 10px;
         margin-bottom: 35px;
       }
+
       .leftedText {
         padding-left: 20px;
       }
@@ -119,6 +122,7 @@ body {
         width: 40px;
         height: 40px;
       }
+
       .classicText {
         color: white;
         margin: 0;
@@ -138,6 +142,7 @@ body {
         height: 50px;
         width: auto;
       }
+
       .classicText {
         margin: 0;
         margin-top: 20px;
@@ -190,6 +195,7 @@ body {
               filter: drop-shadow(0px 0px 2px #0000001a);
               transition: all 0.2s ease-in;
             }
+
             .buttonDark {
               left: 35px;
               top: 5px;
@@ -217,42 +223,50 @@ body {
                 filter: drop-shadow(0px 0px 2px #00000044);
                 transition: all 0.2s ease-in;
               }
+
               .cloudDark {
                 opacity: 1;
                 filter: drop-shadow(0px 0px 2px #ffffff);
               }
+
               .c1 {
                 width: 25px;
                 margin-left: -10px;
                 transition: all 0.2s ease-in;
                 transition-delay: 0.1s;
               }
+
               .c1Dark {
                 width: 4px;
                 margin-left: -5px;
               }
+
               .c2 {
                 width: 20px;
                 margin-left: 10px;
                 transition: all 0.2s ease-in;
                 transition-delay: 0.05s;
               }
+
               .c2Dark {
                 width: 4px;
                 margin-left: 0;
               }
+
               .c3 {
                 margin-top: -2px;
                 margin-left: -5px;
                 width: 18px;
                 transition: all 0.2s ease-in;
               }
+
               .c3Dark {
                 width: 4px;
                 margin-top: -5px;
                 margin-left: -15px;
               }
             }
+
             .decoDark {
               opacity: 1;
             }
@@ -324,6 +338,7 @@ body {
             opacity: 0;
             transition: all 0.2s ease-in;
           }
+
           .displayCopyText {
             margin-top: -5px;
             opacity: 1;
@@ -410,12 +425,14 @@ body {
           filter: drop-shadow(4px 4px 4px #0a0a0a81);
           z-index: 1;
         }
+
         .stars {
           width: 330px;
           margin-left: 100px;
           margin-top: -10px;
         }
       }
+
       #labMediaQuerie {
         display: none;
       }
@@ -490,18 +507,22 @@ body {
         grid-column-start: 1;
         grid-column-end: 7;
       }
+
       .box6 {
         grid-column-start: 2;
         grid-column-end: 6;
       }
+
       .box7 {
         grid-row-start: 4;
         grid-column-start: 1;
         grid-column-end: 5;
       }
+
       .labTitle {
         grid-row-start: 8;
       }
+
       .box11 {
         grid-row-start: 9;
         grid-row-end: 12;
@@ -511,8 +532,13 @@ body {
     }
   }
 
-  .scene {
-    display: none;
+  #EnteringLabSceneButton {
+
+    height: 250px;
+
+    .scene {
+      display: none;
+    }
   }
 
   #labMediaQuerie {
@@ -521,6 +547,7 @@ body {
     max-height: auto;
   }
 }
+
 @media (max-width: 400px) {
   .box11 {
     grid-row-start: 9 !important;
