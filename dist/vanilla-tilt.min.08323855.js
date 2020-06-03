@@ -127,9 +127,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var VanillaTilt = function () {
   "use strict";
 
-  var t =
-  /*#__PURE__*/
-  function () {
+  var t = /*#__PURE__*/function () {
     function t(e) {
       var i = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
@@ -373,7 +371,7 @@ var VanillaTilt = function () {
 
   return "undefined" != typeof document && (window.VanillaTilt = t, t.init(document.querySelectorAll("[data-tilt]"))), t;
 }();
-},{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -401,7 +399,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57915" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56572" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -577,5 +575,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","vanilla-tilt.min.js"], null)
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","vanilla-tilt.min.js"], null)
 //# sourceMappingURL=/vanilla-tilt.min.08323855.js.map

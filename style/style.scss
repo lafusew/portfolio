@@ -47,7 +47,7 @@ body {
     width: 100%;
     height: calc(100% - 150px);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize;
+    grid-template-rows: $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize $gridRowSize;
     row-gap: 20px;
     column-gap: 20px;
 
@@ -348,6 +348,8 @@ body {
     }
 
     .box10 {
+      color: black;
+      text-decoration: none;
       grid-column-start: 5;
       grid-column-end: 7;
 
@@ -379,6 +381,8 @@ body {
     }
 
     .box11 {
+      color: black;
+      text-decoration: none;
       grid-column-start: 1;
       grid-column-end: 7;
       grid-row-start: 8;

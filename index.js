@@ -8,6 +8,14 @@ var parallaxInstance = new Parallax(scene);
 let emailButton = document.querySelector("#emailLogo");
 let phoneButton = document.querySelector("#phoneLogo");
 
+//clickable divs
+
+let githubTile = document.querySelector('.box10');
+let labTile = document.querySelector('.box11');
+
+
+
+
 //Contact Callback
 
 function copyMail() {
@@ -39,7 +47,7 @@ phoneButton.addEventListener("click", copyPhone);
 phoneButton.addEventListener("click", phoneText);
 
 
-let darkSwitch = document.querySelector(".switch");
+/*let darkSwitch = document.querySelector(".switch");
 let darkButton = document.querySelector(".button");
 let darkDeco = document.querySelector(".deco");
 let darkCloud = document.querySelector(".cloud");
@@ -47,7 +55,7 @@ let darkC1 = document.querySelector(".c1");
 let darkC2 = document.querySelector(".c2");
 let darkC3 = document.querySelector(".c3");
 
-let gridBox = document.querySelectorAll('.gridBox');
+let gridBox = document.querySelectorAll('.gridBox');*/
 
 /*
 function darkModeButton() {

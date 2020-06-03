@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../../usr/local/lib/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
+})({"node_modules/process/browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
@@ -1472,12 +1472,12 @@ var process = require("process");
     }]
   }, {}, [5])(5);
 });
-},{"process":"../../../../../usr/local/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"style/style.scss":[function(require,module,exports) {
+},{"process":"node_modules/process/browser.js"}],"style/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _parallaxJs = _interopRequireDefault(require("parallax-js"));
@@ -1490,7 +1490,10 @@ var scene = document.querySelector(".scene");
 var parallaxInstance = new _parallaxJs.default(scene); //Conctact Varibles
 
 var emailButton = document.querySelector("#emailLogo");
-var phoneButton = document.querySelector("#phoneLogo"); //Contact Callback
+var phoneButton = document.querySelector("#phoneLogo"); //clickable divs
+
+var githubTile = document.querySelector('.box10');
+var labTile = document.querySelector('.box11'); //Contact Callback
 
 function copyMail() {
   navigator.clipboard.writeText("antoine.oddoz@live.fr");
@@ -1533,14 +1536,16 @@ emailButton.addEventListener("click", copyMail);
 emailButton.addEventListener("click", mailText);
 phoneButton.addEventListener("click", copyPhone);
 phoneButton.addEventListener("click", phoneText);
-var darkSwitch = document.querySelector(".switch");
-var darkButton = document.querySelector(".button");
-var darkDeco = document.querySelector(".deco");
-var darkCloud = document.querySelector(".cloud");
-var darkC1 = document.querySelector(".c1");
-var darkC2 = document.querySelector(".c2");
-var darkC3 = document.querySelector(".c3");
-var gridBox = document.querySelectorAll('.gridBox');
+/*let darkSwitch = document.querySelector(".switch");
+let darkButton = document.querySelector(".button");
+let darkDeco = document.querySelector(".deco");
+let darkCloud = document.querySelector(".cloud");
+let darkC1 = document.querySelector(".c1");
+let darkC2 = document.querySelector(".c2");
+let darkC3 = document.querySelector(".c3");
+
+let gridBox = document.querySelectorAll('.gridBox');*/
+
 /*
 function darkModeButton() {
     darkSwitch.classList.toggle("switchDark");
@@ -1559,7 +1564,7 @@ function darkModeButton() {
 
 darkSwitch.addEventListener("click", darkModeButton);
 */
-},{"parallax-js":"node_modules/parallax-js/dist/parallax.js","./style/style.scss":"style/style.scss"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"parallax-js":"node_modules/parallax-js/dist/parallax.js","./style/style.scss":"style/style.scss"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -1587,7 +1592,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57915" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56572" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -1763,7 +1768,7 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -1795,7 +1800,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-loader.js":[function(require,module,exports) {
+},{}],"node_modules/parcel-bundler/src/builtins/bundle-loader.js":[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -1878,7 +1883,7 @@ LazyPromise.prototype.catch = function (onError) {
   if (this.promise === null) this.promise = new Promise(this.executor);
   return this.promise.catch(onError);
 };
-},{"./bundle-url":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/loaders/browser/js-loader.js":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/parcel-bundler/src/builtins/loaders/browser/js-loader.js":[function(require,module,exports) {
 module.exports = function loadJSBundle(bundle) {
   return new Promise(function (resolve, reject) {
     var script = document.createElement('script');
@@ -1901,6 +1906,6 @@ module.exports = function loadJSBundle(bundle) {
   });
 };
 },{}],0:[function(require,module,exports) {
-var b=require("../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("js",require("../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/loaders/browser/js-loader.js"));b.load([]).then(function(){require("index.js");});
-},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
+var b=require("node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("js",require("node_modules/parcel-bundler/src/builtins/loaders/browser/js-loader.js"));b.load([]).then(function(){require("index.js");});
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
 //# sourceMappingURL=/Portfolio2.e31bb0bc.js.map

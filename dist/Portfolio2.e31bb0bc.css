@@ -24,7 +24,7 @@ body {
     width: 100%;
     height: calc(100% - 150px);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
     row-gap: 20px;
     column-gap: 20px; }
     .container .gridLayout .gridBox {
@@ -227,6 +227,8 @@ body {
             margin-top: -5px;
             opacity: 1; }
     .container .gridLayout .box10 {
+      color: black;
+      text-decoration: none;
       grid-column-start: 5;
       grid-column-end: 7; }
       .container .gridLayout .box10 .githubLogo {
@@ -248,6 +250,8 @@ body {
         height: 30px;
         transform: rotate(-20deg); }
     .container .gridLayout .box11 {
+      color: black;
+      text-decoration: none;
       grid-column-start: 1;
       grid-column-end: 7;
       grid-row-start: 8;
@@ -287,7 +291,7 @@ body {
         .container .gridLayout .box11 .scene .stars {
           width: 330px;
           margin-left: 100px;
-          margin-top: -10px; }
+          margin-top: 0px; }
       .container .gridLayout .box11 #labMediaQuerie {
         display: none; }
       .container .gridLayout .box11 .title h3 {
@@ -350,8 +354,10 @@ body {
       grid-row-end: 12;
       justify-content: flex-start;
       align-items: center; }
-  .scene {
-    display: none; }
+  #EnteringLabSceneButton {
+    height: 250px; }
+    #EnteringLabSceneButton .scene {
+      display: none; }
   #labMediaQuerie {
     display: block !important;
     max-width: 70%;

@@ -33,7 +33,7 @@ body {
   width: 100%;
   height: calc(100% - 150px);
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
+  grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
   row-gap: 20px;
   column-gap: 20px;
 }
@@ -332,6 +332,8 @@ body {
 }
 
 .container .gridLayout .box10 {
+  color: black;
+  text-decoration: none;
   grid-column-start: 5;
   grid-column-end: 7;
 }
@@ -363,6 +365,8 @@ body {
 }
 
 .container .gridLayout .box11 {
+  color: black;
+  text-decoration: none;
   grid-column-start: 1;
   grid-column-end: 7;
   grid-row-start: 8;
@@ -414,7 +418,7 @@ body {
 .container .gridLayout .box11 .scene .stars {
   width: 330px;
   margin-left: 100px;
-  margin-top: -10px;
+  margin-top: 0px;
 }
 
 .container .gridLayout .box11 #labMediaQuerie {
@@ -503,7 +507,10 @@ body {
     justify-content: flex-start;
     align-items: center;
   }
-  .scene {
+  #EnteringLabSceneButton {
+    height: 250px;
+  }
+  #EnteringLabSceneButton .scene {
     display: none;
   }
   #labMediaQuerie {
