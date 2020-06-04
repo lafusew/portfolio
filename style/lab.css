@@ -2,9 +2,6 @@ body {
   font-family: "Ubuntu", sans-serif;
   padding: 0;
   margin: 0;
-}
-
-#body {
   background: linear-gradient(270deg, #4beec4, #ffa684, #d3a6ff);
   background-size: 600% 600%;
   animation: gradient-animation 29s ease infinite;
@@ -20,6 +17,28 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+body .backBtn {
+  appearance: button;
+  text-decoration: none;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e9e9e9;
+  font-weight: 600;
+  border-style: none;
+  width: 120px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  background-color: #2b2636;
+  background: linear-gradient(270deg, #4beec4, #ffa684, #d3a6ff);
+  background-size: 600% 600%;
+  animation: gradient-animation 29s ease infinite;
 }
 
 h1 {

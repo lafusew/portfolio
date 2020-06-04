@@ -9,58 +9,87 @@ body {
     font-family: $primary-font;
     padding: 0;
     margin: 0;
-}
 
-#body {
+
     background: linear-gradient(270deg, #4beec4, #ffa684, #d3a6ff);
     background-size: 600% 600%;
-
     -webkit-animation: gradient-animation 29s ease infinite;
     -moz-animation: gradient-animation 29s ease infinite;
     animation: gradient-animation 29s ease infinite;
+
+    @-webkit-keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @-moz-keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    .backBtn {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+
+        text-decoration: none;
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: rgb(233, 233, 233);
+        font-weight: 600;
+
+        border-style: none;
+        width: 120px;
+        height: 60px;
+        border-radius: 10px;
+        box-shadow: $boxShadow;
+        background-color: rgb(43, 38, 54);
+
+        background: linear-gradient(270deg, #4beec4, #ffa684, #d3a6ff);
+        background-size: 600% 600%;
+        -webkit-animation: gradient-animation 29s ease infinite;
+        -moz-animation: gradient-animation 29s ease infinite;
+        animation: gradient-animation 29s ease infinite;
+    }
 }
 
-@-webkit-keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@-moz-keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
 
 
 h1 {
