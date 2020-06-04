@@ -78,6 +78,7 @@ h1 {
 .projectGrid .projectBox .projectImg img {
   margin: 20px;
   width: 70%;
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
 }
